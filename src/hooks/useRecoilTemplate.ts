@@ -1,24 +1,24 @@
-import produce from "immer";
-import { atom, useRecoilState } from "recoil";
+// import produce from "immer";
+// import { atom, useRecoilState } from "recoil";
 
-const recoilTemplateAtom = atom({
-  key: "recoilTemplate",
-  default: {
-    value: false,
-  },
-});
+// const recoilTemplateAtom = atom({
+//   key: "recoilTemplate",
+//   default: {
+//     value: false,
+//   },
+// });
 
-export const useRecoilTemplate = () => {
-  const [recoilTemplate, setRecoilTemplate] =
-    useRecoilState(recoilTemplateAtom);
+// export const useRecoilTemplate = () => {
+//   const [recoilTemplate, setRecoilTemplate] =
+//     useRecoilState(recoilTemplateAtom);
 
-  const setValue = (payload: boolean) => {
-    setRecoilTemplate(
-      produce((draft) => {
-        draft.value = payload;
-      })
-    );
-  };
+//   const setValue = (payload: boolean) => {
+//     setRecoilTemplate(
+//       produce((draft) => {
+//         draft.value = payload;
+//       })
+//     );
+//   };
 
-  return { recoilTemplate, setRecoilTemplate, setValue };
-};
+//   return { recoilTemplate, setRecoilTemplate, setValue };
+// };

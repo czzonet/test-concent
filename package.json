@@ -70,10 +70,12 @@
     "webpackbar": "^5.0.0-3"
   },
   "dependencies": {
+    "@types/react": "^18.0.18",
+    "concent": "^2.19.7",
     "dayjs": "^1.10.7",
     "immer": "^9.0.5",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "recoil": "^0.7.3-alpha.2"
+    "react-is": "^18.2.0"
   }
 }
